@@ -197,6 +197,7 @@ header {
   }
   .report{
     margin-top: 40px;
+    margin-bottom: 250px;
     
   }
   /* Typing animation code ispired by https://codepen.io/denic/pen/GRoOxbM */
@@ -227,7 +228,6 @@ header {
   /* footer */
   footer{
       bottom:0;
-      position: fixed;
       width: 100%;
       text-align: center;
       background-color: #E5E5E5;
@@ -258,7 +258,7 @@ header {
 
 /* Portfolio page */
 .portfolio{
-  padding: 120px 10px 200px 10px;
+  padding: 120px 10px 90px 10px;
 }
 
 
