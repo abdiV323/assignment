@@ -446,7 +446,21 @@ img {
 }
 
 .interests {
-  grid-area: interests;
+ grid-area: interests;
+ 
+}
+.interests p {
+  margin-left: 20px;
+  font-size: 15px;
+  
+}
+.icons div {
+  display:inline-flex;
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 30px;
+  
+
 }
 
 .community {
