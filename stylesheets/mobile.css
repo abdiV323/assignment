@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #FFFDE2;
+    background-color: #131212;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -181,21 +181,45 @@ header {
 
   /* Start of index main */
   .hero{
+    color: white;
       display:block;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
       padding: 225px 30px 0px 30px;
   }
+  .report a {
+    color:black;
+    font-weight: 600;
+    background-color: #FCA311;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .report{
+    margin-top: 40px;
+    
+  }
   /* Typing animation code ispired by https://codepen.io/denic/pen/GRoOxbM */
 .typanimation {
-    width: 22ch;
+    width: 26ch;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
+  border-right: 3px solid #FCA311;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 
 
@@ -227,5 +251,74 @@ header {
     font-size: 40px;
     transition: 0.2s ease-in-out;
     
+}
+
+
+
+
+/* Portfolio page */
+.portfolio{
+  padding: 120px 10px 200px 10px;
+}
+
+
+.port-text{
+  color: white;
+  text-align: left;
+  padding: 0px 10px;
+}
+
+
+
+
+.card-container {
+  border-radius: 10px;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 3.5rem;
+}
+.card {
+  display: grid;
+
+}
+.card .button {
+  align-self: end;
+}
+
+
+
+
+
+
+
+/* Simple Card styles for prettying */
+
+
+
+* {
+  box-sizing: border-box;
+}
+.card {
+  background-color: white;
+}
+.card__title {
+  font-size: 2rem;
+  padding: .5rem;
+}
+.card__description {
+  padding: .5rem;
+  line-height: 1.6em;
+}
+.button {
+  display: block;
+  background-color:#FCA311;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+img {
+  max-width: 100%;
 }
 
