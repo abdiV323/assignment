@@ -4,28 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- stylesheet -->
-        <link rel="stylesheet" href="styles.css">
-        <!-- fonts and icons -->
+        <link rel="stylesheet" href="stylesheets/desktop.css" media= "screen and (min-width: 1200px)">
+        <link rel="stylesheet" href="stylesheets/tablet.css" media= "screen and (min-width: 900px)">
+        <link rel="stylesheet" href="stylesheets/mobile.css" media= "screen and (max-width: 600px)">
+        
+
+        <!-- fonts and icons-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/60657c4bba.js" crossorigin="anonymous"></script>
        <title>My Portfolio</title>
 </head>
     <body>
-        <!-- navigation -->
-        <header>
+        <header class="header">
             <nav>
-                <ul>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">contact us</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                    <li><a href="sitereport.html">Site Report</a></li>
-                </ul>
+              <a href="index.html" class="logo">AV</a>
+              <input class="menu-btn" type="checkbox" id="menu-btn">
+              <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+              <ul class="menu">
+                <li class="mc"><a href="index.html">Home</a></li>
+                <li class="mc"><a href="portfolio.html">Portfolio</a></li>
+                <li class="mc"><a href="cv.html">About</a></li>
+                <li class="mc"><a href="contact.html">Contact</a></li>
+              </ul>
             </nav>
-        </header>
+          </header>
+          
+        <!-- navigation -->
+       
         <!-- start of main section of page -->
-        <main>
-            <h2>Hi, I'm Abdirachid Vermeer</h2>
+        <main class= "hero">
+            <div class="typanimation">
+            <h2>Hi, I'm Abdi Vermeer</h2>
+            </div>
             <p>This is my Web development portfolio</p>
             <p>I'm a first year student from Milton Keynes. On this website i will show you the work that i do on my web development course at the University of Northampton</p>
         </main>
@@ -36,7 +47,7 @@
                     &copy Abdi Vermeer 2020
                 </div>
                 <div>
-                    <ul>
+                    <ul class="icons zoom-effect">
                         <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
                         <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                         <li><a href="https://www.reddit.com/user/Abdi_V"><i class="fab fa-reddit"></i></a></li>

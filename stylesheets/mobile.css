@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding:0
+}
+
+body{
+    background-color: #FFFDE2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* start of index page */
+
+
+
+
+
+/* menu hamburger navigation */
+header {
+    border-bottom: rgba(49, 49, 49, 0.363) 1px solid;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0px;
+    overflow: visible;
+      background-color: #E5E5E5;
+  }
+  
+  .header ul {
+    margin-top: 12px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    list-style-type: none;
+  }
+  
+  
+  li {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  a {
+    color: #131313;
+    text-decoration: none;
+  }
+  
+  .header .logo a:hover {
+    color: #5D576B;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 10px 10px 10px 25px;
+    text-decoration: none;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .header li a:hover {
+    transform: rotate(-2.2deg) scale(1.02);
+  }
+  
+  .header li a:hover:before,
+  li a:hover:after {
+    opacity: 1;
+    width: 12.5px;
+  }
+  
+  .header .mc a:before,
+  .mc a:after {
+    transition: all 0.25s ease;
+    opacity: 0;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: -1;
+    margin: auto;
+    width: 0px;
+  }
+  
+  .header li a:before {
+    transform: rotate(120deg) translateY(-50%) translateX(-50%);
+  }
+  
+  .header li a:after {
+    transform: rotate(-60deg) translateY(-50%) translateX(-50%);
+  }
+  
+  /*-------Website Logo------*/
+  .header .logo {
+    margin-top: 12px;
+    display: block;
+    float: left;
+    color: #14213D;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+  }
+  
+  .header .logo:hover {
+    color: rgb(47, 248, 228);
+  
+  }
+  
+  /*------------START OF HAMBRUGER MENU------------- */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /*-------start of the menu icon----------*/
+  
+  .header .menu-icon {
+    /* cursor: pointer; */
+    position: relative;
+    padding: 20px 20px;
+    float: right;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 24px;
+  
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+     background: #14213D;
+    content: '';
+    display: block;
+    height: 100%;
+    position: relative;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /*-------start of the menu button----------*/
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked~.menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-90deg);
+  }
+  
+  .header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(90deg);
+  }
+  
+  .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+
+
+  /* Start of index main */
+  .hero{
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding: 225px 30px 0px 30px;
+  }
+  /* Typing animation code ispired by https://codepen.io/denic/pen/GRoOxbM */
+.typanimation {
+    width: 26ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #FCA311;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+
+  /* footer */
+  footer{
+      bottom:0;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      background-color: #E5E5E5;
+      padding: 15px 0;
+  }
+/*Code Icon styling inspired by https://codepen.io/ameyraut/pen/yfzog */
+  footer .icons .fab {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+    color: #5D576B;
+    font-size: 30px;
+	
+}
+
+.icons .fab:hover,
+.icons .fab:focus,
+.icons .fab:active{
+    color: #FCA311;
+    font-size: 40px;
+    transition: 0.2s ease-in-out;
+    
+}
+
