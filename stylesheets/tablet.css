@@ -4,6 +4,394 @@
 }
 
 body{
-    background-color: #FFFDE2;
+    background-color: #d61d1d;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* start of index page */
+
+
+
+
+
+/* menu hamburger navigation */
+header {
+    border-bottom: rgba(49, 49, 49, 0.363) 1px solid;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0px;
+    overflow: visible;
+      background-color: #E5E5E5;
+  }
+  
+  .header ul {
+      float: right;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    list-style-type: none;
+  }
+  
+  
+  li {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  a {
+    color: #131313;
+    text-decoration: none;
+  }
+  
+  .header .logo a:hover {
+    color: #5D576B;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 10px 10px 10px 25px;
+    text-decoration: none;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  .menu-btn{
+      display: none;
+  }
+  
+  
+
+  /*-------Website Logo------*/
+  .header .logo {
+    display: block;
+    float: left;
+    color: #14213D;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: ease-in 0.2s;
+  }
+  
+  .header .logo:hover {
+    color: rgb(248, 47, 47);
+  }
+  
+  
+  
+
+  
+
+  
+
+  
+ 
+
+
+
+  /* Start of index main */
+  .hero{
+    color: white;
+      display:block;
+      text-align: left;
+      padding: 200px 30px 0px 50px;
+      margin-bottom: 200px;
+      
+  }
+  .hero p {
+      width: 60%;
+      font-size: 1.2em;
+  }
+  .report a {
+    color:black;
+    font-weight: 600;
+    background-color: #FCA311;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .report{
+    margin-top: 40px;
     
+  }
+  /* Typing animation code ispired by https://codepen.io/denic/pen/GRoOxbM */
+.typanimation {
+    width: 27ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #FCA311;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+
+  /* footer */
+  footer{
+      bottom:0;
+      width: 100%;
+      text-align: center;
+      background-color: #E5E5E5;
+      padding: 15px 0;
+  }
+/*Code Icon styling inspired by https://codepen.io/ameyraut/pen/yfzog */
+  footer .icons .fab {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+    color: #5D576B;
+    font-size: 30px;
+	
+}
+
+.icons .fab:hover,
+.icons .fab:focus,
+.icons .fab:active{
+    color: #FCA311;
+    font-size: 40px;
+    transition: 0.2s ease-in-out;
+    
+}
+
+
+
+
+/* Portfolio page */
+.portfolio{
+  padding: 120px 10px 200px 10px;
+}
+
+
+.port-text{
+  color: white;
+  text-align: left;
+  padding: 0px 10px;
+}
+
+
+
+
+.card-container {
+  border-radius: 10px;
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 3.5rem;
+}
+.card {
+  display: grid;
+
+}
+.card .button {
+  align-self: end;
+}
+
+
+
+
+
+
+
+/* Simple Card styles for prettying */
+
+
+
+* {
+  box-sizing: border-box;
+}
+.card {
+  background-color: white;
+}
+.card__title {
+  font-size: 2rem;
+  padding: .5rem;
+}
+.card__description {
+  padding: .5rem;
+  line-height: 1.6em;
+}
+.button {
+  display: block;
+  background-color:#FCA311;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+
+
+
+/* contact page */
+
+/*--PAGE LAYOUT----*/
+
+.contact{
+  color: white;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding: 150px 30px 0px 30px;
+
+}
+
+
+/*--FONT STYLING----*/
+
+
+.contact-section h2 {
+  font-size: 20px;
+  color: rgb(13, 72, 235);
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contact-message {
+  background-color: rgb(13, 72, 235);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 5px 10px 5px;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+
+/*--CONTACT FORM----*/
+.contact-form-text {
+  display: block;
+  width: 90%;
+  box-sizing: border-box;
+  font-size: 20px;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  border: 2px solid black;
+  color: #0a50e6;
+  padding: 10px 10px;
+  outline: none;
+}
+
+
+/*--SEND BUTTON----*/
+/*--CODE FROM https://codepen.io/bobbykorec/pen/qOGbyr----*/
+.send-button {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 0.5rem;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+
+
+
+
+/* CV Page*/
+.resume {
+  color: white;
+  display: grid;
+  width  :80%;
+  /* hardcoded purely for codepen example */
+  height: auto;
+  /* hardcoded purely for codepen example */
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows   : 1fr 1fr 1fr 1fr;
+  grid-gap             : 2px;
+  grid-template-areas  :
+      "name  contact"
+      "about  work"
+      "interests interests"
+      "skills skills";
+      overflow: hidden;
+      font-size: 12px;
+}
+
+.grid-area {
+  padding: 1em 1em 1em 1em;
+  border : 1px white solid;
+}
+
+.name {
+  grid-area: name;
+}
+
+.contact {
+  grid-area: photo;
+}
+
+.about {
+  grid-area: about;
+}
+
+.work {
+  grid-area: work;
+}
+
+.skills {
+  grid-area: skills;
+  width: 100%;
+}
+.skills ul li {
+  grid-area: skills;
+  display: inline-flex !important;
+  width: 48%;
+  margin: 5px 0px 5px
+}
+
+.interests {
+ grid-area: interests;
+ 
+}
+.interests p {
+  margin-left: 20px;
+  font-size: 15px;
+  
+}
+.icons div {
+  display:inline-flex;
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 20px;
+  
+
+}
+
+.community {
+  grid-area: community;
+}
+
+.wrapper {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  margin-bottom: 150px;
 }
