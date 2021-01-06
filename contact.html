@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="stylesheets/desktop.css" media= "screen and (min-width: 1200px)">
+        <link rel="stylesheet" href="stylesheets/tablet.css" media= "screen and (min-width: 900px)">
+        <link rel="stylesheet" href="stylesheets/mobile.css" media= "screen and (max-width: 600px)">
+
+        
+
+        <!-- fonts and icons-->
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/60657c4bba.js" crossorigin="anonymous"></script>
+       <title>My Portfolio</title>
+</head>
+    <body>
+        <header class="header">
+            <nav>
+              <a href="index.html" class="logo">AV</a>
+              <input class="menu-btn" type="checkbox" id="menu-btn">
+              <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+              <ul class="menu">
+                <li class="mc"><a href="index.html">Home</a></li>
+                <li class="mc"><a href="portfolio.html">Portfolio</a></li>
+                <li class="mc"><a href="cv.html">About</a></li>
+                <li class="mc"><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+          
+        <!-- navigation -->
+       
+        <!-- start of main section of page -->
+        <main class= "contact" >
+
+            <!---------CONTACT FORM INSPIRED BY https://codepen.io/ssbalakumar/pen/uzDIA---------------------->
+    <div class="contact-section" >
+        <h1 class="section-title">Feel free to contact me here</h1>
+        <h2>Just fill this contact form below</h2>
+        <form action="mailto:vermeerabdi@gmail.com" method="post" class="reveal">
+          <!---------------form allows the contact form to actually work---------------->
+          <input type="text" name="name" class="contact-form-text" placeholder="Enter your name">
+          <input type="email" name="email address" class="contact-form-text" placeholder="Email">
+          <input type="text" name="number" class="contact-form-text" placeholder="Phone number">
+          <textarea class="contact-form-text" name="message">message...</textarea>
+  
+          <!---------SEND BUTTON INSPIRED BY https://codepen.io/bobbykorec/pen/qOGbyr---------------------->
+          <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            send
+          </button>
+        </form>
+      </div>
+        </main>
+         <!-- start of footer -->
+         <footer>
+            <div>
+                <div>
+                    &copy Abdi Vermeer 2020 
+                </div>
+                <div>
+                    <ul class="icons zoom-effect">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.reddit.com/user/Abdi_V"><i class="fab fa-reddit"></i></a></li>
+                        <li><a href="https://github.com/abdiV323/"><i class="fab fa-github-square"></i></a></li>
+                    </ul>
+                </div>
+                </div>
+                
+            </footer>
+    </body>
+</html>
