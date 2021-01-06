@@ -121,7 +121,7 @@ header {
   overflow: hidden;
   border-right: 3px solid #FCA311;
   font-size: 2.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   
 }
 
@@ -143,18 +143,27 @@ header {
   footer{
       bottom:0;
       width: 100%;
-      text-align: center;
       background-color: #E5E5E5;
       padding: 15px 0;
+      display: inline-block;
+  }
+  .foot{
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 10px;
+  }
+  .copyright{
+      margin-top: 15px;
   }
 /*Code Icon styling inspired by https://codepen.io/ameyraut/pen/yfzog */
   footer .icons .fab {
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
-	text-align: center;
+	float: right;
     color: #5D576B;
     font-size: 30px;
+    margin-left: 10px;
 	
 }
 
@@ -172,7 +181,7 @@ header {
 
 /* Portfolio page */
 .portfolio{
-  padding: 120px 10px 200px 10px;
+  padding: 120px 10px 100px 10px;
 }
 
 
@@ -180,6 +189,12 @@ header {
   color: white;
   text-align: left;
   padding: 0px 10px;
+}
+.port-text p{
+    font-size: 22px;
+}
+.port-text h2{
+    font-size: 36px;
 }
 
 
@@ -244,6 +259,7 @@ img {
 
 .contact{
   color: white;
+  font-size: 22px;
       display:block;
       margin-left: auto;
       margin-right: auto;
@@ -257,7 +273,7 @@ img {
 
 
 .contact-section h2 {
-  font-size: 20px;
+  font-size: 26px;
   color: rgb(13, 72, 235);
   font-weight: 400;
   letter-spacing: 1px;
@@ -279,7 +295,7 @@ img {
 /*--CONTACT FORM----*/
 .contact-form-text {
   display: block;
-  width: 90%;
+  width: 60%;
   box-sizing: border-box;
   font-size: 20px;
   border-radius: 6px;
@@ -308,6 +324,7 @@ img {
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 800;
+  margin-bottom: 100px;
 }
 
 
@@ -331,7 +348,7 @@ img {
       "interests interests"
       "skills skills";
       overflow: hidden;
-      font-size: 12px;
+      font-size: 14px;
 }
 
 .grid-area {
@@ -341,23 +358,28 @@ img {
 
 .name {
   grid-area: name;
+  font-size: 20px;
 }
 
-.contact {
-  grid-area: photo;
+.Contact {
+  grid-area: contact;
+  font-size: 20px;
 }
 
 .about {
   grid-area: about;
+  font-size: 20px;
 }
 
 .work {
   grid-area: work;
+  font-size: 20px;
 }
 
 .skills {
   grid-area: skills;
   width: 100%;
+  font-size: 20px;
 }
 .skills ul li {
   grid-area: skills;
@@ -372,21 +394,19 @@ img {
 }
 .interests p {
   margin-left: 20px;
-  font-size: 15px;
+  font-size: 20px;
   
 }
 .icons div {
   display:inline-flex;
-  font-size: 30px;
-  padding: 10px;
+  font-size: 55px;
+  padding: 20px;
   margin-top: 20px;
   
 
 }
 
-.community {
-  grid-area: community;
-}
+
 
 .wrapper {
   display        : flex;
