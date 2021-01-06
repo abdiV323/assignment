@@ -400,6 +400,79 @@ img {
 
 
 
+/* CV Page*/
+.resume {
+  color: white;
+  display: grid;
+  width  :80%;
+  /* hardcoded purely for codepen example */
+  height: auto;
+  /* hardcoded purely for codepen example */
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows   : 1fr 1fr 1fr 1fr;
+  grid-gap             : 2px;
+  grid-template-areas  :
+      "name  contact"
+      "about  work"
+      "interests interests"
+      "skills  skills";
+      overflow: hidden;
+      font-size: 12px;
+}
+
+.grid-area {
+  padding: 1em 1em 1em 1em;
+  border : 1px white solid;
+}
+
+.name {
+  grid-area: name;
+}
+
+.contact {
+  grid-area: photo;
+}
+
+.about {
+  grid-area: about;
+}
+
+.work {
+  grid-area: work;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.interests {
+  grid-area: interests;
+}
+
+.community {
+  grid-area: community;
+}
+
+.wrapper {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

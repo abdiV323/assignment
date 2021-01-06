@@ -32,15 +32,55 @@
           
         <!-- navigation -->
        
-        <!-- start of main section of page -->
-        <main class= "hero">
-            <div class="typanimation">
-            <h2>Hi, I'm Abdi Vermeer</h2>
-            </div>
-            <p>This is my Web development portfolio</p>
-            <p>I'm a first year student from Milton Keynes. On this website i will show you the work that i do on my web development course at the University of Northampton</p>
-            <p class= "report"><a href ="sitereport.html">View report</a></p>
-        </main>
+        <!-- Layout for CV created following article from https://css-tricks.com/new-year-new-job-lets-make-a-grid-powered-resume/-->
+    
+<main class="wrapper">
+    <article class="resume">
+        <section class="grid-area name">
+            <h2>Abdirachid Vermeer</h2>
+            <p>Computer science Student based in northampton</p>
+        </section>
+        <section class="grid-area Contact">
+          <h2>contact</h2>
+          <p>07654321658</p>
+          <p>Bletchley, Milton Keynes</p>
+          <p>vermeerabdi@gmail.com</p>
+        </section>
+              <section class="grid-area about">
+            <h2>About</h2>
+            <p>I am a 1st year at the University of Northampton, i am interested in computing and technology. I hope to become a hardware engineer and have a big impact on the future of technology.</p>
+        </section>
+        <section class="grid-area work">
+            <h2> Work Experience</h2>
+            <h3>i have worked various fields such as retail and hospitality</h3>
+            <p>20017-2018-Retail Store</p> 
+            <p>2018-2019-Sports centre</p>     
+        </section>
+        <section class="grid-area skills">
+            <h2>Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>HTMl5</li>
+            <li>Oracle</li>
+            <li>css</li>
+            <li>Communication</li>
+            <li>Problem Solving</li>
+            <li>Teamwork</li>
+        </ul>
+            <hr>
+        </section>
+<section class="grid-area interests">
+    <h2>Interests & Hobbies</h2>
+    <div class="interests-items">
+      <div><i class="fas fa-gamepad"></i></i><p class="interest-font">Gaming</p></div>
+      <div><i class="fas fa-video"></i><p class="interest-font">Movies</p></div>
+      <div><i class="fas fa-paint-brush"></i><p class="interest-font">Painting</p></div>
+      <div><i class="fas fa-route"></i><p class="interest-font">Traveling</p></div>
+      <div><i class="fas fa-biking"></i><p class="interest-font">Sports</p></div>
+    </div>
+        </section>
+    </article>
+</main>
          <!-- start of footer -->
          <footer>
             <div>
