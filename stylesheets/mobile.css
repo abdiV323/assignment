@@ -189,13 +189,27 @@ header {
   }
   /* Typing animation code ispired by https://codepen.io/denic/pen/GRoOxbM */
 .typanimation {
-    width: 22ch;
+    width: 26ch;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
+  border-right: 3px solid #FCA311;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+
 }
 
 
