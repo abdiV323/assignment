@@ -201,7 +201,7 @@ header {
   }
   /* Typing animation code ispired by https://codepen.io/denic/pen/GRoOxbM */
 .typanimation {
-    width: 26ch;
+    width: 27ch;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
