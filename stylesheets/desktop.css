@@ -3,7 +3,7 @@
   padding:0
 }
 body{
-background-color: #06ff2f;
+background-color: #131212;
 font-family: 'Open Sans', sans-serif;
 }
 
@@ -112,6 +112,64 @@ border-radius: 4px;
 margin-top: 40px;
 
 }
+
+/* screen animation */
+.screenanimation2{
+  background-color: yellow;
+  width: 4em;
+  height: 4em;
+  animation: block2 4s infinite ease-in;
+  
+}
+
+@keyframes block2 {
+
+0% {
+  transform: translate(10vw, 40vh);
+}
+25%{
+  transform: translate(40vw,40vh)
+}
+50%{
+  transform: translate(40vw,0vh)
+}
+75% {
+  transform: translate(10vw,0vh)
+
+}
+100%{
+  transform: translate(10vw,40vh)
+}
+}
+
+.screen-animation{
+  background-color: white;
+  width: 4em;
+  height: 4em;
+  animation: block1 4s infinite ease-in;
+  
+}
+
+@keyframes block1 {
+
+0% {
+  transform: translate(0vw, 0vh);
+}
+25%{
+  transform: translate(50vw,0vh)
+}
+50%{
+  transform: translate(50vw,50vh)
+}
+75% {
+  transform: translate(0vw,50vh)
+
+}
+100%{
+  transform: translate(0vw,0vh)
+}
+}
+
 /* Typing animation code ispired by https://codepen.io/denic/pen/GRoOxbM */
 .typanimation {
 width: 27ch;
@@ -427,3 +485,4 @@ margin-bottom: 150px;
   margin: 0px 10px 100px 10px;
 
 }
+
