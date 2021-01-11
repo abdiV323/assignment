@@ -102,6 +102,65 @@ header {
       width: 60%;
       font-size: 1.2em;
   }
+
+
+
+  /* screen animation */
+.screenanimation2{
+    background-color: yellow;
+    width: 4em;
+    height: 4em;
+    animation: block2 4s infinite ease-in;
+    
+  }
+  
+  @keyframes block2 {
+  
+  0% {
+    transform: translate(10vw, 60vh);
+  }
+  25%{
+    transform: translate(60vw,60vh)
+  }
+  50%{
+    transform: translate(60vw,0vh)
+  }
+  75% {
+    transform: translate(10vw,0vh)
+  
+  }
+  100%{
+    transform: translate(10vw,60vh)
+  }
+  }
+  
+  .screen-animation{
+    background-color: white;
+    width: 4em;
+    height: 4em;
+    animation: block1 4s infinite ease-in;
+    
+  }
+  
+  @keyframes block1 {
+  
+  0% {
+    transform: translate(0vw, 0vh);
+  }
+  25%{
+    transform: translate(70vw,0vh)
+  }
+  50%{
+    transform: translate(70vw,80vh)
+  }
+  75% {
+    transform: translate(0vw,80vh)
+  
+  }
+  100%{
+    transform: translate(0vw,0vh)
+  }
+  }
   .report a {
     color:black;
     font-weight: 600;
