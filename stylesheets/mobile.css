@@ -15,7 +15,7 @@ body{
 
 
 /* menu hamburger navigation */
-header {
+.header {
     border-bottom: rgba(49, 49, 49, 0.363) 1px solid;
     position: fixed;
     width: 100%;
@@ -104,9 +104,9 @@ header {
   
   }
   
-  /*------------START OF HAMBRUGER MENU------------- */
+   /*------------START OF HAMBRUGER MENU------------- */
   
-  .header .menu {
+   .header .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
@@ -114,7 +114,7 @@ header {
   
   /*-------start of the menu icon----------*/
   
-  .header .menu-icon {
+  .header .burger-lines {
     /* cursor: pointer; */
     position: relative;
     padding: 20px 20px;
@@ -122,7 +122,7 @@ header {
     user-select: none;
   }
   
-  .header .menu-icon .burger-icon {
+  .header .burger-lines .burgericon {
     display: inline-block;
     height: 3px;
     position: relative;
@@ -131,8 +131,8 @@ header {
   
   }
   
-  .header .menu-icon .burger-icon:before,
-  .header .menu-icon .burger-icon:after {
+  .header .burger-lines .burgericon:before,
+  .header .burger-lines .burgericon:after {
      background: #14213D;
     content: '';
     display: block;
@@ -142,11 +142,11 @@ header {
     width: 100%;
   }
   
-  .header .menu-icon .burger-icon:before {
+  .header .burger-lines .burgericon:before {
     top: 5px;
   }
   
-  .header .menu-icon .burger-icon:after {
+  .header .burger-lines .burgericon:after {
     top: -5px;
   }
   
@@ -160,23 +160,22 @@ header {
     max-height: 240px;
   }
   
-  .header .burger-btn:checked~.menu-icon .burger-icon {
+  .header .burger-btn:checked~.burger-lines .burgericon {
     background: transparent;
   }
   
-  .header .burger-btn:checked~.menu-icon .burger-icon:before {
+  .header .burger-btn:checked~.burger-lines .burgericon:before {
     transform: rotate(-90deg);
   }
   
-  .header .burger-btn:checked~.menu-icon .burger-icon:after {
+  .header .burger-btn:checked~.burger-lines .burgericon:after {
     transform: rotate(90deg);
   }
   
-  .header .burger-btn:checked~.menu-icon:not(.steps) .burger-icon:before,
-  .header .burger-btn:checked~.menu-icon:not(.steps) .burger-icon:after {
+  .header .burger-btn:checked~.burger-lines:not(.steps) .burgericon:before,
+  .header .burger-btn:checked~.burger-lines:not(.steps) .burgericon:after {
     top: 0;
   }
-
 
 
   /* Start of index main */
@@ -480,6 +479,25 @@ img {
   margin-top: 100px;
   margin-bottom: 150px;
 }
+
+/* site report */
+
+.first.site-report{
+  margin-top: 300px;
+  
+}
+
+
+.site-report{
+  color: white;
+  margin-bottom: 100px;
+
+}
+
+
+
+
+
 
 
 
