@@ -413,3 +413,17 @@ img {
   margin-top: 100px;
   margin-bottom: 150px;
 }
+
+/* site report */
+
+.first.site-report {
+    margin-top: 100px !important;
+    
+  }
+  
+  
+  .site-report{
+    color: white;
+    margin: 0px 10px 100px 10px;
+  
+  }

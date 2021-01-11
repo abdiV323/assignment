@@ -416,8 +416,8 @@ margin-bottom: 150px;
 
 /* site report */
 
-.first.site-report{
-  margin-top: 100px;
+.first.site-report {
+  margin-top: 100px !important;
   
 }
 
