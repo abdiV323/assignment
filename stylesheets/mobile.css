@@ -67,8 +67,8 @@ header {
     width: 12.5px;
   }
   
-  .header .mc a:before,
-  .mc a:after {
+  .header .navlink a:before,
+  .navlink a:after {
     transition: all 0.25s ease;
     opacity: 0;
     content: '';
@@ -122,7 +122,7 @@ header {
     user-select: none;
   }
   
-  .header .menu-icon .navicon {
+  .header .menu-icon .burger-icon {
     display: inline-block;
     height: 3px;
     position: relative;
@@ -131,8 +131,8 @@ header {
   
   }
   
-  .header .menu-icon .navicon:before,
-  .header .menu-icon .navicon:after {
+  .header .menu-icon .burger-icon:before,
+  .header .menu-icon .burger-icon:after {
      background: #14213D;
     content: '';
     display: block;
@@ -142,38 +142,38 @@ header {
     width: 100%;
   }
   
-  .header .menu-icon .navicon:before {
+  .header .menu-icon .burger-icon:before {
     top: 5px;
   }
   
-  .header .menu-icon .navicon:after {
+  .header .menu-icon .burger-icon:after {
     top: -5px;
   }
   
   /*-------start of the menu button----------*/
   
-  .header .menu-btn {
+  .header .burger-btn {
     display: none;
   }
   
-  .header .menu-btn:checked~.menu {
+  .header .burger-btn:checked~.menu {
     max-height: 240px;
   }
   
-  .header .menu-btn:checked~.menu-icon .navicon {
+  .header .burger-btn:checked~.menu-icon .burger-icon {
     background: transparent;
   }
   
-  .header .menu-btn:checked~.menu-icon .navicon:before {
+  .header .burger-btn:checked~.menu-icon .burger-icon:before {
     transform: rotate(-90deg);
   }
   
-  .header .menu-btn:checked~.menu-icon .navicon:after {
+  .header .burger-btn:checked~.menu-icon .burger-icon:after {
     transform: rotate(90deg);
   }
   
-  .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
-  .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+  .header .burger-btn:checked~.menu-icon:not(.steps) .burger-icon:before,
+  .header .burger-btn:checked~.menu-icon:not(.steps) .burger-icon:after {
     top: 0;
   }
 
@@ -380,7 +380,7 @@ img {
 
 
 /*--SEND BUTTON----*/
-/*--CODE FROM https://codepen.io/bobbykorec/pen/qOGbyr----*/
+/*--code inspired from https://codepen.io/bobbykorec/pen/qOGbyr----*/
 .send-button {
   display: block;
   margin: 0 auto;
@@ -406,9 +406,7 @@ img {
   color: white;
   display: grid;
   width  :80%;
-  /* hardcoded purely for codepen example */
   height: auto;
-  /* hardcoded purely for codepen example */
   grid-template-columns: 2fr 1fr;
   grid-template-rows   : 1fr 1fr 1fr 1fr;
   grid-gap             : 2px;

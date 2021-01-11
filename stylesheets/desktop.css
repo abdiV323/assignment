@@ -55,7 +55,7 @@ text-decoration: none;
 opacity: 1;
 transition: all 0.3s ease;
 }
-.menu-btn{
+.burger-btn{
   display: none;
 }
 
@@ -335,9 +335,7 @@ margin-bottom: 100px;
 color: white;
 display: grid;
 width  :80%;
-/* hardcoded purely for codepen example */
 height: auto;
-/* hardcoded purely for codepen example */
 grid-template-columns: 2fr 1fr;
 grid-template-rows   : 1fr 1fr 1fr 1fr;
 grid-gap             : 2px;
