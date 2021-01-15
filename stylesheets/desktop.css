@@ -76,6 +76,8 @@ transition: ease-in 0.2s;
 color: rgb(248, 47, 47);
 }
 
+/* Nav link animations */
+
 .hoverhome {
   margin: 20px;
   padding: 0 20px;
@@ -128,9 +130,6 @@ a:hover:after {
 
 
 
-
-
-
 /* Start of index main */
 .hero{
 color: white;
@@ -144,6 +143,7 @@ color: white;
   width: 60%;
   font-size: 1.2em;
 }
+/* report link */
 .report a {
 color:black;
 font-weight: 600;
@@ -162,27 +162,26 @@ margin-top: 40px;
   width: 4em;
   height: 4em;
   animation: block2 4s infinite ease-in;
-  z-index: 2;
   
 }
 
 @keyframes block2 {
 
 0% {
-  transform: translate(20vw, 40vh);
+  transform: translate(10vw, 30vh);
 }
 25%{
-  transform: translate(40vw,40vh)
+  transform: translate(10vw,70vh)
 }
 50%{
-  transform: translate(40vw,0vh)
+  transform: translate(40vw,70vh)
 }
 75% {
-  transform: translate(20vw,0vh)
+  transform: translate(40vw,30vh)
 
 }
 100%{
-  transform: translate(20vw,40vh)
+  transform: translate(10vw,30vh)
 }
 }
 
@@ -198,20 +197,20 @@ margin-top: 40px;
 @keyframes block1 {
 
 0% {
-  transform: translate(0vw, 0vh);
+  transform: translate(0vw, 20vh);
 }
 25%{
-  transform: translate(50vw,0vh)
+  transform: translate(0vw,90vh)
 }
 50%{
-  transform: translate(50vw,50vh)
+  transform: translate(50vw,90vh)
 }
 75% {
-  transform: translate(0vw,50vh)
+  transform: translate(50vw,20vh)
 
 }
 100%{
-  transform: translate(0vw,0vh)
+  transform: translate(0vw,20vh)
 }
 }
 

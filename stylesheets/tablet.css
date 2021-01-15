@@ -76,6 +76,51 @@ header {
   .header .logo:hover {
     color: rgb(248, 47, 47);
   }
+
+  /* Nav link animations */
+
+.hoverhome {
+  margin: 20px;
+  padding: 0 20px;
+  background-color: #E5E5E5;
+}
+
+.hoverhome a {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+	color: #fff;
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	position: relative;
+  -webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+  padding: 15px;
+}
+
+.hoverhome a:after {
+	content: "";
+	position: relative;
+	height: 2px;
+	background-color: tomato;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+a:hover {
+	color: tomato;
+}
+
+a:hover:after {
+	width: 100%;
+}
   
   
   
@@ -105,62 +150,64 @@ header {
 
 
 
-  /* screen animation */
+ /* screen animation */
 .screenanimation2{
-    background-color: yellow;
-    width: 4em;
-    height: 4em;
-    animation: block2 4s infinite ease-in;
-    
-  }
+  background-color: yellow;
+  width: 4em;
+  height: 4em;
+  animation: block2 4s infinite ease-in;
   
-  @keyframes block2 {
+}
+
+@keyframes block2 {
+
+0% {
+  transform: translate(10vw, 30vh);
+}
+25%{
+  transform: translate(10vw,70vh)
+}
+50%{
+  transform: translate(40vw,70vh)
+}
+75% {
+  transform: translate(40vw,30vh)
+
+}
+100%{
+  transform: translate(10vw,30vh)
+}
+}
+
+.screen-animation{
+  background-color: white;
+  width: 4em;
+  height: 4em;
+  animation: block1 4s infinite ease-in;
+  z-index: 2;
   
-  0% {
-    transform: translate(10vw, 60vh);
-  }
-  25%{
-    transform: translate(60vw,60vh)
-  }
-  50%{
-    transform: translate(60vw,0vh)
-  }
-  75% {
-    transform: translate(10vw,0vh)
-  
-  }
-  100%{
-    transform: translate(10vw,60vh)
-  }
-  }
-  
-  .screen-animation{
-    background-color: white;
-    width: 4em;
-    height: 4em;
-    animation: block1 4s infinite ease-in;
-    
-  }
-  
-  @keyframes block1 {
-  
-  0% {
-    transform: translate(0vw, 0vh);
-  }
-  25%{
-    transform: translate(70vw,0vh)
-  }
-  50%{
-    transform: translate(70vw,80vh)
-  }
-  75% {
-    transform: translate(0vw,80vh)
-  
-  }
-  100%{
-    transform: translate(0vw,0vh)
-  }
-  }
+}
+
+@keyframes block1 {
+
+0% {
+  transform: translate(0vw, 20vh);
+}
+25%{
+  transform: translate(0vw,90vh)
+}
+50%{
+  transform: translate(50vw,90vh)
+}
+75% {
+  transform: translate(50vw,20vh)
+
+}
+100%{
+  transform: translate(0vw,20vh)
+}
+}
+ /* report link */
   .report a {
     color:black;
     font-weight: 600;
