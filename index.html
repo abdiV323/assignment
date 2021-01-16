@@ -4,8 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- stylesheet -->
+        <!-- This is the stylesheet that will be used for the Styling of the website when in tablet resolution,  i am using this method as splitting up the css for the different resolutions is waht we learnt in lesson -->
         <link rel="stylesheet" href="stylesheets/tablet.css" media= "screen and (min-width: 600px)">
+        <!-- This is the stylesheet that will be used for the styling of the website when it is mobile resolution, i am using this method as splitting up the css for the different resolutions is waht we learnt in lesson -->
         <link rel="stylesheet" href="stylesheets/mobile.css" media= "screen and (max-width: 600px)">
+        <!-- This is the stylesheet that will be used for the styling of the website when it is in desktop resolution, i am using this method as splitting up the css for the different resolutions is waht we learnt in lesson -->
         <link rel="stylesheet" href="stylesheets/desktop.css" media= "screen and (min-width: 1000px)">
         
 
@@ -19,16 +22,20 @@
         <header class="header">
             <!-- navigation bar -->
                 <nav>
-                    <!-- this is the logo -->
+                    <!-- This is the logo used for the website -->
                   <a href="index.html" class="logo">AV</a>
-                  <!-- classes for the hamburger menu -->
+                  <!-- Classes for the hamburger menu -->
                   <input class="burger-btn" type="checkbox" id="burger-btn">
                   <label class="burger-lines" for="burger-btn"><span class="burgericon"></span></label>
                   <ul class="menu">
-                      <!-- navigation links -->
+                      <!-- Navigation links for the header of the website-->
+                      <!-- index page link for the navigation bar-->
                     <li class="mc"><a class="hoverhome" href="index.html">Home</a></li>
+                    <!-- portfolio page link for the navigation bar -->
                     <li class="mc"><a class="hoverhome" href="portfolio.html">Portfolio</a></li>
+                    <!-- cv page link for the navigation bar -->
                     <li class="mc"><a class="hoverhome" href="cv.html">CV</a></li>
+                    <!-- contact page link for the navigation bar -->
                     <li class="mc"><a class="hoverhome" href="contact.html">Contact</a></li>
                   </ul>
                 </nav>
@@ -37,11 +44,15 @@
         
        
         <!-- start of main section of page -->
+        <!-- classes for the block animation -->
         <div class=screen-animation>
         </div>
         <div class=screenanimation2></div>
+        <!-- main class for desktop -->
         <main class= "hero">
+            <!-- class for typing animation -->
             <div class="typanimation">
+                <!-- main text -->
             <h2>Hi, I'm Abdi Vermeer</h2>
             </div>
             <p>This is my Web development portfolio</p>
@@ -58,9 +69,13 @@
                 <div>
                     <!-- footer icons -->
                     <ul class="icons zoom-effect">
+                       <!-- facebook icon -->
                         <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <!-- linkedin icon -->
                         <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <!-- reddit icon -->
                         <li><a href="https://www.reddit.com/user/Abdi_V"><i class="fab fa-reddit"></i></a></li>
+                        <!-- github icon -->
                         <li><a href="https://github.com/abdiV323/"><i class="fab fa-github-square"></i></a></li>
                     </ul>
                 </div>
