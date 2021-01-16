@@ -2,7 +2,7 @@
     margin: 0;
     padding:0
 }
-
+/* main background */
 body{
     background-color: #131212;
     font-family: 'Open Sans', sans-serif;
@@ -72,6 +72,7 @@ header {
     text-decoration: none;
     transition: ease-in 0.2s;
   }
+  /* logo animation */
   
   .header .logo:hover {
     color: rgb(248, 47, 47);
@@ -158,6 +159,7 @@ a:hover:after {
   animation: block2 4s infinite ease-in;
   
 }
+/* block2 translation */
 
 @keyframes block2 {
 
@@ -187,6 +189,7 @@ a:hover:after {
   z-index: 2;
   
 }
+/* block1 translation */
 
 @keyframes block1 {
 
@@ -230,6 +233,7 @@ a:hover:after {
   margin-bottom: 0.5em;
   
 }
+/* typing keyframe */
 
 @keyframes typing {
   from {
@@ -272,6 +276,7 @@ a:hover:after {
     margin-left: 10px;
 	
 }
+/* Footer icons */
 
 .icons .fab:hover,
 .icons .fab:focus,
@@ -304,7 +309,7 @@ a:hover:after {
 }
 
 
-
+/* Portfolio grid */
 
 .card-container {
   border-radius: 10px;
@@ -376,8 +381,6 @@ img {
 
 
 /*--FONT STYLING----*/
-
-
 .contact-section h2 {
   font-size: 26px;
   color: rgb(13, 72, 235);
@@ -385,6 +388,7 @@ img {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
+/* Contact page message styling */
 
 .contact-message {
   background-color: rgb(13, 72, 235);
@@ -438,6 +442,8 @@ img {
 
 
 /* CV Page*/
+
+/* grid setup and styling */
 .resume {
   color: white;
   display: grid;
@@ -459,38 +465,46 @@ img {
   padding: 1em 1em 1em 1em;
   border : 1px white solid;
 }
-
+/* CV name  */
 .name {
   grid-area: name;
   font-size: 20px;
 }
+/* CV Contact */
 
 .Contact {
   grid-area: contact;
   font-size: 20px;
 }
+/* CV about */
 
 .about {
   grid-area: about;
   font-size: 20px;
 }
+/* CV work experience */
 
 .work {
   grid-area: work;
   font-size: 20px;
 }
 
+/* CV skills */
+
 .skills {
   grid-area: skills;
   width: 100%;
   font-size: 20px;
 }
+/* skills list styling */
 .skills ul li {
   grid-area: skills;
   display: inline-flex !important;
   width: 48%;
   margin: 5px 0px 5px
 }
+
+/* CV interests */
 
 .interests {
  grid-area: interests;
@@ -501,6 +515,7 @@ img {
   font-size: 20px;
   
 }
+/* CV icon styling */
 .icons div {
   display:inline-flex;
   font-size: 55px;
@@ -526,7 +541,6 @@ img {
     margin-top: 100px !important;
     
   }
-  
   
   .site-report{
     color: white;

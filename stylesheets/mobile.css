@@ -349,6 +349,8 @@ img {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
+/* Contact page message styling */
+
 
 .contact-message {
   background-color: rgb(13, 72, 235);
@@ -402,6 +404,8 @@ img {
 
 
 /* CV Page*/
+
+/* grid setup and styling */
 .resume {
   color: white;
   display: grid;
@@ -424,33 +428,40 @@ img {
   border : 1px white solid;
 }
 
+/* CV name  */
 .name {
   grid-area: name;
 }
+/* CV contact */
 
 .contact {
   grid-area: photo;
 }
+/* CV about */
 
 .about {
   grid-area: about;
 }
+/* CV work experience */
 
 .work {
   grid-area: work;
 }
 
+/* CV skills */
+
 .skills {
   grid-area: skills;
   width: 100%;
 }
+/* CV skills list and styling */
 .skills ul li {
   grid-area: skills;
   display: inline-flex !important;
   width: 48%;
   margin: 5px 0px 5px
 }
-
+/* CV interests */
 .interests {
  grid-area: interests;
  
@@ -460,6 +471,7 @@ img {
   font-size: 15px;
   
 }
+/* CV interests icon styling */
 .icons div {
   display:inline-flex;
   font-size: 30px;
