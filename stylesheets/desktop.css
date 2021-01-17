@@ -537,7 +537,10 @@ margin-bottom: 100px;
 
 .first.site-report {
   margin-top: 100px !important;
+}
   
+.first.site-report h1{
+font-size: 40px;
 }
 
 
